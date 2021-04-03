@@ -59,19 +59,6 @@ This will create the smart contract artifacts in folder ```build\contracts```.
 
 Migrate smart contracts to the locally running blockchain, ganache-cli:
 
-```
-truffle migrate
-```
-
-Your terminal should look something like this:
-
-![truffle test](images/truffle_migration.png)
-
-Test smart contracts:
-
-```
-truffle test
-```
 
 
 
