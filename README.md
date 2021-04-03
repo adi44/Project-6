@@ -1,28 +1,25 @@
 # Supply chain & data auditing
 
-This repository containts an Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer. The user story is similar to any commonly used supply chain process. A Seller can add items to the inventory system stored in the blockchain. A Buyer can purchase such items from the inventory system. Additionally a Seller can mark an item as Shipped, and similarly a Buyer can mark an item as Received.
-
+This Project is quite important in Blockchain Udacity Course. this project focuses on supply chain project, that helps to track item in the suppy chain.
 The DApp User Interface when running should look like...
 
-![truffle test](images/ftc_product_overview.png)
+![truffle test](images/Farm_Details.png)
 
-![truffle test](images/ftc_farm_details.png)
+![truffle test](images/Product_Details.png)
 
-![truffle test](images/ftc_product_details.png)
-
-![truffle test](images/ftc_transaction_history.png)
+![truffle test](images/UI.png)
 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+In this write up I will share some important screenshots of the Deployment of my Contracts.
 
 ### Prerequisites
 
 Please make sure you've already installed ganache-cli, Truffle and enabled MetaMask extension in your browser.
 
 ```
-Give examples (to be clarified)
+npm install -g
 ```
 
 ### Installing
@@ -48,10 +45,6 @@ Launch Ganache:
 ganache-cli -m "spirit supply whale amount human item harsh scare congress discover talent hamster"
 ```
 
-Your terminal should look something like this:
-
-![truffle test](images/ganache-cli.png)
-
 In a separate terminal window, Compile smart contracts:
 
 ```
@@ -72,7 +65,7 @@ truffle migrate
 
 Your terminal should look something like this:
 
-![truffle test](images/truffle_migrate.png)
+![truffle test](images/truffle_migration.png)
 
 Test smart contracts:
 
@@ -80,15 +73,20 @@ Test smart contracts:
 truffle test
 ```
 
-All 10 tests should pass.
 
-![truffle test](images/truffle_test.png)
 
 In a separate terminal window, launch the DApp:
 
 ```
 npm run dev
 ```
+## Contract Address
+
+# Farm Role : 0x9BA8161E315752121063AeBfD7D8966520a8343c
+# Distributor Role : 0x0700D6C4a6416591Fd5e06362f2C873D0791b578
+# Retailer Role : 0xAF66FCE3A0FD150aeF810869D9a1b4a08815d4ae
+# Consumer Role : 0x603093411187c1637d0d27C33D57C9b9d0D8C8aF
+# Supply Chain : 0xed78F283B4e801C67d286947d87213314599EcAf
 
 ## Built With
 
