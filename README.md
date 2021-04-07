@@ -3,6 +3,10 @@
 This Project is quite important in Blockchain Udacity Course. this project focuses on supply chain project, that helps to track item in the suppy chain.
 The DApp User Interface when running should look like...
 
+Credits : all the UML Diagrams have been drawn using Draw.io Application, that follows the similar structure for all diagrams. 
+
+
+
 ![truffle test](images/Farm_Details.png)
 
 ![truffle test](images/Product_Details.png)
