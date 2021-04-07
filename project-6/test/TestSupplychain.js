@@ -53,8 +53,11 @@ Private Keys:
     console.log("Distributor: accounts[2] ", accounts[2])
     console.log("Retailer: accounts[3] ", accounts[3])
     console.log("Consumer: accounts[4] ", accounts[4])
+    
+    //all the accounts details
+    
 
-// 1st Test
+// 1st Test to allow farmer to harvest coffee
     it("Testing smart contract function harvestItem() that allows a farmer to harvest coffee", async() => {
         const supplyChain = await SupplyChain.deployed()
         await supplyChain.addFarmer(originFarmerID, {from: ownerID}); 
@@ -92,7 +95,7 @@ Private Keys:
         assert.equal(eventEmitted, true, 'Invalid event emitted')        
     })    
 
-    // 2nd Test
+    // 2nd Test to process coffee
     it("Testing smart contract function processItem() that allows a farmer to process coffee", async() => {
         const supplyChain = await SupplyChain.deployed()
 
@@ -113,7 +116,7 @@ Private Keys:
             eventEmitted = true; 
         } 
 
-        // Retrieve the just now saved item from blockchain by calling function fetchItem()
+        
         const resultBufferOne = await supplyChain.fetchItemBufferOne.call(upc)
         const resultBufferTwo = await supplyChain.fetchItemBufferTwo.call(upc)
 
