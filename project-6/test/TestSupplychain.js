@@ -399,10 +399,15 @@ Private Keys:
         
         // Verify the result set:
         assert.equal(resultBufferOne[0], sku, 'Error: Invalid item SKU')
+        //SKU
         assert.equal(resultBufferOne[1], upc, 'Error: Invalid item UPC')
+        //UPC
         assert.equal(resultBufferOne[2], consumerID, 'Error: Missing or Invalid ownerID')
+        //OWNER ID
         assert.equal(resultBufferOne[3], originFarmerID, 'Error: Missing or Invalid originFarmerID')
+        //FARMER ID
         assert.equal(resultBufferOne[4], originFarmName, 'Error: Missing or Invalid originFarmName')
+        //FARMER NAME
         assert.equal(resultBufferOne[5], originFarmInformation, 'Error: Missing or Invalid originFarmInformation')
         assert.equal(resultBufferOne[6], originFarmLatitude, 'Error: Missing or Invalid originFarmLatitude')
         assert.equal(resultBufferOne[7], originFarmLongitude, 'Error: Missing or Invalid originFarmLongitude')
@@ -417,14 +422,23 @@ Private Keys:
         
         // Verify the result set:
         assert.equal(resultBufferTwo[0], sku, 'Error: Invalid item SKU')
+        //item SKU'
         assert.equal(resultBufferTwo[1], upc, 'Error: Invalid item UPC')
+        //UPC
         assert.equal(resultBufferTwo[2], productID, 'Error: Invalid product id')
+        //ID
         assert.equal(resultBufferTwo[3], productNotes, 'Error: Invalid product notes')
+        //NOTES
         assert.equal(resultBufferTwo[4], productPrice, 'Error: Invalid product price')
-        assert.equal(resultBufferTwo[5], 7, 'Error: Invalid item State') //itemState == Purchased       
+        //PRICE
+        assert.equal(resultBufferTwo[5], 7, 'Error: Invalid item State')       
+        //ITEMSTATE
         assert.equal(resultBufferTwo[6], distributorID, 'Error: Missing or Invalid distributorID')
+        //DISTRIBUTOR ID
         assert.equal(resultBufferTwo[7], retailerID, 'Error: Missing or Invalid retailerID')
+        //RETAILER ID
         assert.equal(resultBufferTwo[8], consumerID, 'Error: Missing or Invalid consumerID')
+        //CONSUMER ID
     })
 
 });
